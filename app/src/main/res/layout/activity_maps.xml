@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Pedometer"
+        />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Pedometer"
+        />
+
+    <Button
+        android:id="@+id/btn_hb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartHBM"
+        android:text="@string/monitor_heartbeat_rate"
+
+        />
+
+    <Button
+        android:id="@+id/btn_them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartThem"
+        android:text="@string/check_temperature"
+
+        />
+
+    <Button
+        android:id="@+id/btn_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartBMI"
+        android:text="@string/start_bmi_calculator"
+
+
+        />
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/activity_maps" />
+
+
+
+</LinearLayout>

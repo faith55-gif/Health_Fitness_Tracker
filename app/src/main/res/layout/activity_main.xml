@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/bmi_calculator"
+        android:textSize="32sp"
+        tools:text="@string/BodyMassIndexCalculator" />
+
+    <ToggleButton
+        android:id="@+id/activity_main_toggleunits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff="@string/imperial_units"
+        android:textOn="@string/metric_units" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/activity_main_heightlabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/height"
+                    android:textSize="24sp"
+                    tools:text="height" />
+
+                <EditText
+                    android:id="@+id/activity_main_heightcm"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:height="48dp"
+                    android:ems="3"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/height_in_cm"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/activity_main_heightfeet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/feet"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/activity_main_heightinches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:height="48dp"
+                        android:ems="3"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/inches"
+                        android:inputType="numberDecimal"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/activity_main_weightlabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weight"
+                    android:textSize="24sp"
+                    tools:text="Weight" />
+
+                <EditText
+                    android:id="@+id/activity_main_weightkgs"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="3"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/weight_in_kgs"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/activity_main_weightlbs"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="3"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/weight_in_lbs"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_main_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/calculate"
+        tools:text="@string/CALCULATE" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="6dp"
+        app:cardMaxElevation="6dp"
+        android:layout_margin="6dp"
+        android:id="@+id/activity_main_resultcard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/bmi"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/activity_main_bmi"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/activity_main_category"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

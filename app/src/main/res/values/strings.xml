@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">David_HealthFitness_App</string>
+    <string name="title_activity_maps">Health Fitness</string>
+    <string name="default_text" />
+    <string name="weight" />
+    <string name="height" />
+    <string name="calculateBMI" />
+    <string name="very_severely_underweight" />
+    <string name="severely_underweight" />
+    <string name="underweight" />
+    <string name="normal" />
+    <string name="overweight" />
+    <string name="obese_class_i" />
+    <string name="obese_class_ii" />
+    <string name="obese_class_iii" />
+    <string name="bmi" />
+    <string name="calculate" />
+    <string name="lbs" />
+    <string name="kg" />
+    <string name="in" />
+    <string name="ft" />
+    <string name="cm" />
+    <string name="metric_units" />
+    <string name="imperial_units" />
+    <string name="bmi_calculator" />
+    <string name="height_in_cm">Height in cm</string>
+    <string name="height_in_feet">Height in feet</string>
+    <string name="feet">feet</string>
+    <string name="inches">inches</string>
+    <string name="weight_in_kgs">weight in kgs</string>
+    <string name="weight_in_lbs">weight in lbs</string>
+    <string name="CALCULATE">calculate BMI</string>
+    <string name="BodyMassIndexCalculator">BMI CALCULATOR</string>
+    <string name="start_bmi_calculator">Start BMI Calculator</string>
+    <string name="check_temperature">Check Temperature</string>
+    <string name="monitor_heartbeat_rate">Monitor Heartbeat Rate</string>
+</resources>
